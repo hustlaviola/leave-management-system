@@ -232,3 +232,26 @@ nav li:hover {
   width: 40%;
   float: left;
 }
+
+/* form */
+
+.signup {
+  margin-top: 150px;
+  border: 1px solid #d1d1d1;
+  width: 320px;
+  border-radius: 5px;
+  padding: 0 20px;
+  background: var(--white);
+  color: var(--primary-text);
+  text-align: center;
+  float: right;
+}
+
+.form-unit {
+    margin-top: 20px;
+    background: transparent;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 1px solid #cecece;
+    height: 30px;
+  }
