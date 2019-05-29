@@ -160,50 +160,75 @@ ul {
 }
 
 .current {
-    font-weight: bold;
+  font-weight: bold;
 }
-
 
 /* Header */
 
 .header {
-    position: fixed;
-    width: 100vw;
-    height: 70px;
-    top: 0;
-    padding: 0 20px;
-    z-index: 1;
-    color: var(--secondary-blue);
-    background: var(--white);
-  }
-  
-  .header a {
-    color: var(--secondary-blue);
-  }
-  
-  #logo {
-    float: left;
-  }
-  
-  #logo h1 {
-    font-size: 50px;
-    font-family: "Ultra", serif;
-  }
-  
-  nav {
-    float: right;
-  }
-  
-  nav ul {
-    margin-top: 23px;
-  }
-  
-  nav li {
-    display: inline;
-    padding: 12px 20px;
-    border-radius: 5px;
-  }
-  
-  nav li:hover {
-    border: 1px solid var(--secondary-blue);
-  }
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  top: 0;
+  padding: 0 20px;
+  z-index: 1;
+  color: var(--secondary-blue);
+  background: var(--white);
+}
+
+.header a {
+  color: var(--secondary-blue);
+}
+
+#logo {
+  float: left;
+}
+
+#logo h1 {
+  font-size: 50px;
+  font-family: "Ultra", serif;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin-top: 23px;
+}
+
+nav li {
+  display: inline;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+
+nav li:hover {
+  border: 1px solid var(--secondary-blue);
+}
+
+/* showcase */
+
+#showcase {
+  background: linear-gradient(
+      to right bottom,
+      rgba(1, 11, 53, 0.9),
+      rgba(94, 82, 202, 0.9)
+    ),
+    url("../images/images.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  margin: auto;
+  color: var(--white);
+}
+
+#showcase h1 {
+  margin-top: 170px;
+  font-size: 30px;
+}
+
+.welcome {
+  margin-top: 100px;
+  width: 40%;
+  float: left;
+}
