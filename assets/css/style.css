@@ -291,4 +291,8 @@ nav li:hover {
     border-color: #dadada;
     font-size: 15px;
   }
+
+  .alert {
+    color: #ee1935;
+  }
     

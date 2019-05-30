@@ -52,6 +52,7 @@
               />
               <input
                 type="email"
+                onblur="validateEmail()"
                 placeholder="Email.."
                 id="email"
                 class="form-unit"
@@ -71,7 +72,7 @@
                 class="form-unit"
                 required
               />
-              <button type="submit" class="btn btn-primary mt-5 mb-2">
+              <button type="submit" id="signup-btn" class="btn btn-primary mt-5 mb-2">
                 Sign Up
               </button>
             </form>
