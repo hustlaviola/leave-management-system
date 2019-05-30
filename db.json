@@ -1,44 +1,52 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "firstname": "John",
-        "lastname": "Doe",
-        "email": "john@mail.com",
-        "password": "jjjjjj",
-        "role": "employee",
-        "requestId": 1
-      },
-      {
-        "id": 2,
-        "firstname": "Jane",
-        "lastname": "Doe",
-        "email": "jane@mail.com",
-        "password": "jjjddd",
-        "role": "employee",
-        "requestId": 2
-      },
-      {
-        "id": 3,
-        "firstname": "Johnson",
-        "lastname": "Doe",
-        "email": "johnson@mail.com",
-        "password": "jjjddd",
-        "role": "admin"
-      }
-    ],
-    "requests": [
-      {
-        "id": 1,
-        "type": "bereavement",
-        "description": "I just lost my father and I need two weeks to mourn",
-        "status": "pending"
-      },
-      {
-        "id": 2,
-        "type": "maternity",
-        "description": "I just gave birth to a baby girl. I will need about two months to nurse my baby",
-        "status": "rejected"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john@mail.com",
+      "password": "jjjjjj",
+      "role": "employee"
+    },
+    {
+      "id": 2,
+      "firstname": "Jane",
+      "lastname": "Doe",
+      "email": "jane@mail.com",
+      "password": "jjjddd",
+      "role": "employee"
+    },
+    {
+      "id": 3,
+      "firstname": "Johnson",
+      "lastname": "Doe",
+      "email": "johnson@mail.com",
+      "password": "jjjddd",
+      "role": "admin"
+    },
+    {
+      "id": 4,
+      "firstname": "Joan",
+      "lastname": "Doe",
+      "email": "joan@mail.com",
+      "password": "jjjddd",
+      "role": "employee"
+    }
+  ],
+  "requests": [
+    {
+      "id": 1,
+      "type": "bereavement",
+      "description": "I just lost my father and I need two weeks to mourn",
+      "status": "pending",
+      "requester": 1
+    },
+    {
+      "id": 2,
+      "type": "maternity",
+      "description": "I just gave birth to a baby girl. I will need about two months to nurse my baby",
+      "status": "rejected",
+      "requester": 4
+    }
+  ]
+}

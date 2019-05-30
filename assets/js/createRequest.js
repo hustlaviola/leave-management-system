@@ -12,6 +12,7 @@ document.querySelector(".request-form").addEventListener("submit", event => {
 
   const xhr = new XMLHttpRequest();
     const type = leaveType.options[leaveType.selectedIndex].value;
+    const requester = Number(localStorage.getItem("id"));
     
     xhr.open("POST", url, true);
 
@@ -26,7 +27,8 @@ document.querySelector(".request-form").addEventListener("submit", event => {
     const data = JSON.stringify({
       type: type,
       description: description.value,
-      status: "pending"
+      status: "pending",
+      requester: requester
     });
     xhr.send(data);
 });
