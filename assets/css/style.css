@@ -244,7 +244,14 @@ nav li:hover {
   background: var(--white);
   color: var(--primary-text);
   text-align: center;
+}
+
+.signup {
   float: right;
+}
+
+.login {
+  background: var(--light-blue);
 }
 
 .form-unit {
