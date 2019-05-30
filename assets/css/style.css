@@ -163,6 +163,10 @@ ul {
   font-weight: bold;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Header */
 
 .header {

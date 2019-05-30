@@ -7,7 +7,7 @@
     <title>LMS | Signup</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body onload="getUsers()">
     <header class="header bb">
       <div id="logo">
         <a href="#">
@@ -21,6 +21,7 @@
         </ul>
       </nav>
     </header>
+    <div class="users hidden"></div>
     <section id="showcase">
       <div class="container">
         <div class="container2">
@@ -79,5 +80,6 @@
         </div>
       </div>
     </section>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
