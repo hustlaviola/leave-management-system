@@ -61,6 +61,8 @@ document.querySelector(".auth-form").addEventListener("submit", event => {
       employees.forEach(employee => {
         if (employee["email"] === email.value) {
           if (employee["password"] === password.value) {
+            const id = employee["id"];
+            localStorage.setItem("id", id);
             window.location.href = "./home.html";
           } else {
             alert.innerHTML = "Incorrect password";
