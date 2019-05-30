@@ -235,7 +235,7 @@ nav li:hover {
 
 /* form */
 
-.signup, .login {
+.signup, .login, .request {
   margin-top: 150px;
   border: 1px solid #d1d1d1;
   width: 320px;
@@ -247,6 +247,10 @@ nav li:hover {
 }
 
 .signup {
+  float: right;
+}
+
+.request {
   float: right;
 }
 
@@ -262,3 +266,25 @@ nav li:hover {
     border-bottom: 1px solid #cecece;
     height: 30px;
   }
+
+  select {
+    background: transparent;
+    padding: 5px;
+    line-height: 1;
+    border-radius: 5px;
+    border-color: #dadada;
+    height: 40px;
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  textarea {
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #dadada;
+    font-size: 15px;
+  }
+    

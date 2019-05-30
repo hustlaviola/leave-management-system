@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LMS | Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header bb">
+      <div id="logo">
+        <a href="#">
+          <h1>LMS</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="current">Home</a></li>
+          <li><a href="request.html">My Request</a></li>
+          <li><a href="login.html">Sign Out</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="showcase">
+      <div class="container">
+        <div class="container2">
+          <div class="welcome">
+            <h1>Leave Management System</h1>
+            <p class="mt-1">
+              Leave Management System is a platform where employees can request
+              for leave and employers can choose to accept or deny the request.
+            </p>
+          </div>
+          <div class="request">
+            <h3 class="mt-3">Request for leave</h3>
+            <form class="flex-column mt-3">
+              <select class="mb-2">
+                <option selected hidden>Leave Type</option>
+                <option value="">Bereavement</option>
+                <option value="">Pregnancy</option>
+                <option value="">Vacation</option>
+                <option value="">Sick</option>
+                <option value="">Maternity</option>
+              </select>
+              <textarea placeholder="Description.."></textarea>
+              <button type="submit" class="btn btn-primary mt-2 mb-3">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
