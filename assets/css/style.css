@@ -235,7 +235,7 @@ nav li:hover {
 
 /* form */
 
-.signup {
+.signup, .login {
   margin-top: 150px;
   border: 1px solid #d1d1d1;
   width: 320px;
