@@ -24,7 +24,47 @@
     </header>
     <div id="modal" class="modal-div flex flex-center">
       <span id="close-modal">&times;</span>
+      <div id="req-modal" class="hidden">
+        <p class="mb-1">Type: <span id="req-type"></span></p>
+        <hr />
+        <p class="mt-1 mb-1">
+          Description:
+          <span id="req-description"
+            ></span
+          >
+        </p>
+        <hr />
+        <p class="mt-1 mb-1">Status: <span id="req-status"></span></p>
+        <div class="two-btn mt-2">
+          <button onclick="" class="btn-small btn-primary mb-1">
+            Edit
+          </button>
+          <button onclick="" class="btn-small btn-danger mb-1">
+            Delete
+          </button>
+        </div>
       </div>
+      <div id="no-req" class="hidden"></div>
+      <div id="req-edit" class="hidden">
+        <form class="flex-column">
+          <div class="center mb-5"><h2>Update Request</h2></div>
+          <select id="mod-leave-type" class="mb-2">
+            <option selected hidden>Leave Type</option>
+            <option value="bereavement">Bereavement</option>
+            <option value="pregnancy">Pregnancy</option>
+            <option value="vacation">Vacation</option>
+            <option value="sick">Sick</option>
+            <option value="maternity">Maternity</option>
+          </select>
+          <textarea id="mod-description" placeholder="Description.."></textarea>
+          <div class="center mt-5">
+            <button type="submit" class="btn-small btn-primary">
+              Update
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <section id="showcase">
       <div class="container">
         <div class="container2">
@@ -34,7 +74,9 @@
               Leave Management System is a platform where employees can request
               for leave and employers can choose to accept or deny the request.
             </p>
-            <button id="req-btn" class="btn btn-primary mt-5">My Request</button>
+            <button id="req-btn" class="btn btn-primary mt-5">
+              My Request
+            </button>
           </div>
           <div class="request">
             <h3 class="mt-3">Request for leave</h3>

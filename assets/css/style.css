@@ -167,6 +167,10 @@ ul {
   display: none;
 }
 
+.center {
+  text-align: center;
+}
+
 /* Header */
 
 .header {
@@ -335,4 +339,26 @@ nav li:hover {
     cursor: pointer;
     transition: 0.3s;
   }
+
+  #req-modal, #no-req, #req-edit {
+    width: 400px;
+    text-align: left;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  #req-modal p {
+    font-weight: bold;
+  }
+
+  #req-modal span {
+    font-weight: normal;
+  }
+
+  .two-btn {
+    text-align: center;
+  }
+
+
     
