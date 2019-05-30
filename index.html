@@ -7,7 +7,7 @@
     <title>LMS | Signup</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body onload="getUsers()">
     <header class="header bb">
       <div id="logo">
         <a href="#">
@@ -21,6 +21,7 @@
         </ul>
       </nav>
     </header>
+    <div class="users hidden"></div>
     <section id="showcase">
       <div class="container">
         <div class="container2">
@@ -51,6 +52,7 @@
               />
               <input
                 type="email"
+                onblur="validateEmail()"
                 placeholder="Email.."
                 id="email"
                 class="form-unit"
@@ -70,13 +72,15 @@
                 class="form-unit"
                 required
               />
-              <button type="submit" class="btn btn-primary mt-5 mb-2">
+              <button type="submit" id="signup-btn" class="btn btn-primary mt-5 mb-2">
                 Sign Up
               </button>
             </form>
+            <div class="alert mb-2"></div>
           </div>
         </div>
       </div>
     </section>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
