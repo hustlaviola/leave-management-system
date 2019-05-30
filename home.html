@@ -34,20 +34,21 @@
           </div>
           <div class="request">
             <h3 class="mt-3">Request for leave</h3>
-            <form class="flex-column mt-3">
-              <select class="mb-2">
+            <form class="flex-column mt-3 request-form">
+              <select id="leave-type" class="mb-2">
                 <option selected hidden>Leave Type</option>
-                <option value="">Bereavement</option>
-                <option value="">Pregnancy</option>
-                <option value="">Vacation</option>
-                <option value="">Sick</option>
-                <option value="">Maternity</option>
+                <option value="bereavement">Bereavement</option>
+                <option value="pregnancy">Pregnancy</option>
+                <option value="vacation">Vacation</option>
+                <option value="sick">Sick</option>
+                <option value="maternity">Maternity</option>
               </select>
-              <textarea placeholder="Description.."></textarea>
+              <textarea id="description" placeholder="Description.."></textarea>
               <button type="submit" class="btn btn-primary mt-2 mb-3">
                 Submit
               </button>
             </form>
+            <div class="alert mb-2"></div>
           </div>
         </div>
       </div>
