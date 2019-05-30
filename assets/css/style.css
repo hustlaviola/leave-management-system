@@ -235,7 +235,7 @@ nav li:hover {
 
 /* form */
 
-.signup, .login {
+.signup, .login, .request {
   margin-top: 150px;
   border: 1px solid #d1d1d1;
   width: 320px;
@@ -247,6 +247,10 @@ nav li:hover {
 }
 
 .signup {
+  float: right;
+}
+
+.request {
   float: right;
 }
 
