@@ -4,6 +4,7 @@
   "description": "Leave Management System is a platform where employees can request for leave and employers can choose to accept or deny the request",
   "main": "index.js",
   "scripts": {
+    "start": "json-server --watch db.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
