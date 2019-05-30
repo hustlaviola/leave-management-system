@@ -7,7 +7,7 @@
     <title>LMS | Home</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body onload="getMyRequest()">
     <header class="header bb">
       <div id="logo">
         <a href="#">
@@ -22,6 +22,7 @@
         </ul>
       </nav>
     </header>
+    <div class="hidden request"></div>
     <div id="modal" class="modal-div flex flex-center">
       <span id="close-modal">&times;</span>
       <div id="req-modal" class="hidden">
@@ -74,7 +75,7 @@
               Leave Management System is a platform where employees can request
               for leave and employers can choose to accept or deny the request.
             </p>
-            <button id="req-btn" class="btn btn-primary mt-5">
+            <button onclick="getRequest(event)" class="btn btn-primary mt-5">
               My Request
             </button>
           </div>
@@ -100,5 +101,6 @@
       </div>
     </section>
     <script src="./assets/js/createRequest.js"></script>
+    <script src="./assets/js/getRequest.js"></script>
   </body>
 </html>
