@@ -98,3 +98,9 @@ const update = (event) => {
   });
   xhr.send(data);
 }
+
+const closeModal = document.getElementById("close-modal");
+
+closeModal.onclick = () => {
+  modal.style.display = "none";
+};
