@@ -383,3 +383,9 @@ textarea {
 .two-btn {
   text-align: center;
 }
+
+.reqs {
+  width: 700px;
+  padding: 20px;
+  margin-top: 120px;
+}
