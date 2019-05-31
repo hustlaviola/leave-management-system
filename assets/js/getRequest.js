@@ -22,6 +22,7 @@ const reqType = document.getElementById("req-type");
 const reqDescription = document.getElementById("req-description");
 const reqStatus = document.getElementById("req-status");
 const noReq = document.getElementById("no-req");
+const reqEdit = document.getElementById("req-edit");
 
 const reset = () => {
   if (!reqModal.classList.contains("hidden")) {
@@ -58,3 +59,10 @@ const getRequest = () => {
     });
   }
 };
+
+const edit = () => {
+  reset();
+  modal.style.display = "flex";
+  reqEdit.classList.remove("hidden");
+}
+
