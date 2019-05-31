@@ -66,3 +66,35 @@ const edit = () => {
   reqEdit.classList.remove("hidden");
 }
 
+const update = (event) => {
+  event.preventDefault();
+  const leaveType = document.getElementById("mod-leave-type");
+
+  
+  const type = leaveType.options[leaveType.selectedIndex].value;
+  const description = document.getElementById("mod-description");
+
+  
+  const url = `http://localhost:3000/requests/${id}`;
+
+  const xhr = new XMLHttpRequest();
+    
+  xhr.open("PATCH", url, true);
+
+  xhr.setRequestHeader("content-Type", "application/json");
+
+  xhr.onload = function() {
+    if (this.status === 200) {
+      modal.style.display = "none";
+      modal.style.display = "flex";
+      reqEdit.classList.add("hidden");
+      noReq.classList.remove("hidden");
+      noReq.innerHTML = "Update Successful";
+    }
+  };
+  const data = JSON.stringify({
+    type: type,
+    description: description.value,
+  });
+  xhr.send(data);
+}

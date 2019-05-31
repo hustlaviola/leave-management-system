@@ -43,9 +43,9 @@
     },
     {
       "id": 2,
-      "type": "maternity",
-      "description": "I just gave birth to a baby girl. I will need about two months to nurse my baby",
-      "status": "rejected",
+      "type": "Leave Type",
+      "description": "jdssdsd",
+      "status": "pending",
       "requester": 2
     }
   ]
