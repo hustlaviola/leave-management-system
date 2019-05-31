@@ -40,6 +40,20 @@
       "description": "I just lost my father and I need two weeks to mourn",
       "status": "pending",
       "requester": 2
+    },
+    {
+      "id": 2,
+      "type": "pregnancy",
+      "description": "I just lost idjgdgdjdjdmm sdkskdksdkskdsd",
+      "status": "approved",
+      "requester": 1
+    },
+    {
+      "id": 3,
+      "type": "sick",
+      "description": "I just kdkskdskdksdk lost my father jfjsfjfjfjejfekeekfewsd",
+      "status": "pending",
+      "requester": 4
     }
   ]
 }
