@@ -6,6 +6,10 @@ const users = [];
 const url = `http://localhost:3000/requests`;
 
 function getRequests() {
+    const user = JSON.parse(localStorage.getItem('id'));
+    if(!user) {
+      window.location.href = './login.html';
+    }
   xhr.open("GET", url, true);
 
   xhr.onload = function() {

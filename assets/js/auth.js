@@ -13,6 +13,7 @@ let xhr = new XMLHttpRequest();
 const url = `http://localhost:3000/users`;
 
 function getUsers() {
+  localStorage.removeItem("id")
   xhr.open("GET", url, true);
 
   xhr.onload = function() {
@@ -61,9 +62,14 @@ document.querySelector(".auth-form").addEventListener("submit", event => {
       employees.forEach(employee => {
         if (employee["email"] === email.value) {
           if (employee["password"] === password.value) {
+            if (employee["role"] === "admin") {
+              const id = employee["id"];
+              localStorage.setItem("id", id);
+              window.location.href = "./admin.html";
+            }else {
             const id = employee["id"];
             localStorage.setItem("id", id);
-            window.location.href = "./home.html";
+            window.location.href = "./home.html";}
           } else {
             alert.innerHTML = "Incorrect password";
             return;
