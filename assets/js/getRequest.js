@@ -35,8 +35,7 @@ const reset = () => {
   reqStatus.innerHTML = "";
 };
 
-const getRequest = event => {
-  event.preventDefault();
+const getRequest = () => {
   reset();
   modal.style.display = "flex";
   const reqs = JSON.parse(request.innerHTML);
