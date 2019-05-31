@@ -39,13 +39,6 @@
       "type": "bereavement",
       "description": "I just lost my father and I need two weeks to mourn",
       "status": "pending",
-      "requester": 1
-    },
-    {
-      "id": 2,
-      "type": "Leave Type",
-      "description": "jdssdsd",
-      "status": "pending",
       "requester": 2
     }
   ]

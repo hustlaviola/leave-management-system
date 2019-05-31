@@ -104,3 +104,25 @@ const closeModal = document.getElementById("close-modal");
 closeModal.onclick = () => {
   modal.style.display = "none";
 };
+
+const del = () => {
+   
+  const url = `http://localhost:3000/requests/${id}`;
+
+  const xhr = new XMLHttpRequest();
+    
+  xhr.open("DELETE", url, true);
+
+  xhr.setRequestHeader("content-Type", "application/json");
+
+  xhr.onload = function() {
+    if (this.status === 200) {
+      modal.style.display = "none";
+      modal.style.display = "flex";
+      reqModal.classList.add("hidden");
+      noReq.classList.remove("hidden");
+      noReq.innerHTML = "Request deleted successfully";
+    }
+  };
+  xhr.send();
+}
