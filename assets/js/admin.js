@@ -58,3 +58,23 @@ const approve = event => {
   });
   xhr.send(data);
 };
+
+const decline = event => {
+    const target = event.target;
+    const id = target.parentNode.id;
+    const url = `http://localhost:3000/requests/${id}`;
+  
+  
+    xhr.open("PATCH", url, true);
+  
+    xhr.setRequestHeader("content-Type", "application/json");
+  
+    xhr.onload = function() {
+      if (this.status === 200) {
+      }
+    };
+    const data = JSON.stringify({
+      status: "declined"
+    });
+    xhr.send(data);
+  };
