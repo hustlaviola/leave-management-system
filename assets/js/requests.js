@@ -77,9 +77,16 @@ const update = (event) => {
   
   const type = leaveType.options[leaveType.selectedIndex].value;
   const description = document.getElementById("mod-description");
+  const reqs = JSON.parse(request.innerHTML)
 
+  let idd;
+  reqs.forEach(req => {
+    if(req["requester"] == id) {
+      idd = req["id"];
+    }
+  })
   
-  const url = `http://localhost:3000/requests/${id}`;
+  const url = `http://localhost:3000/requests/${idd}`;
 
   const xhr = new XMLHttpRequest();
     
